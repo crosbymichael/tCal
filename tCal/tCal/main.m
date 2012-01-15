@@ -7,13 +7,31 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CMCalendar.h"
+#import "CMArgumentParser.h"
+#import "ITerminalOutput.h"
+
+#define DEFAULTDAYS 5
 
 int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
+        CMCalendar * calendar = [[CMCalendar alloc] init];
+        CMArgumentParser * parser = [[CMArgumentParser alloc] init];
+        NSInteger days;
         
-        
+        @try {
+            days = [(NSString *)[parser argumentForName:@"-d"] integerValue];
+        }
+        @catch (NSException *exception) {
+            days = DEFAULTDAYS;
+        }
+        NSArray * events = [calendar getEventsForDays:days];
+        for (id <ITerminalOutput> output in events) {
+            [output display];
+        }
+
     }
     return 0;
 }

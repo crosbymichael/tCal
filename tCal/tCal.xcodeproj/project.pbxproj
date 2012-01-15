@@ -10,6 +10,12 @@
 		4C2E484A14C23D2900E778BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2E484914C23D2900E778BF /* Foundation.framework */; };
 		4C2E484D14C23D2900E778BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2E484C14C23D2900E778BF /* main.m */; };
 		4C2E485114C23D2900E778BF /* tCal.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4C2E485014C23D2900E778BF /* tCal.1 */; };
+		4C2E486014C23E5700E778BF /* CalendarStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2E485F14C23E5700E778BF /* CalendarStore.framework */; };
+		4C2E486514C23F1700E778BF /* CMCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2E486414C23F1700E778BF /* CMCalendar.m */; };
+		4C8E984614C24AD800E62CE0 /* CMDateFormatterFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8E984514C24AD800E62CE0 /* CMDateFormatterFactory.m */; };
+		4C8E984B14C24E3200E62CE0 /* CMArgumentParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8E984A14C24E3200E62CE0 /* CMArgumentParser.m */; };
+		4C8E984F14C2528900E62CE0 /* CMEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8E984E14C2528900E62CE0 /* CMEvent.m */; };
+		4CD3FA6E14C26475000A4088 /* CMLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD3FA6D14C26475000A4088 /* CMLog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +37,19 @@
 		4C2E484C14C23D2900E778BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4C2E484F14C23D2900E778BF /* tCal-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tCal-Prefix.pch"; sourceTree = "<group>"; };
 		4C2E485014C23D2900E778BF /* tCal.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = tCal.1; sourceTree = "<group>"; };
+		4C2E485F14C23E5700E778BF /* CalendarStore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CalendarStore.framework; path = System/Library/Frameworks/CalendarStore.framework; sourceTree = SDKROOT; };
+		4C2E486314C23F1700E778BF /* CMCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMCalendar.h; sourceTree = "<group>"; };
+		4C2E486414C23F1700E778BF /* CMCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMCalendar.m; sourceTree = "<group>"; };
+		4C8E984414C24AD800E62CE0 /* CMDateFormatterFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDateFormatterFactory.h; sourceTree = "<group>"; };
+		4C8E984514C24AD800E62CE0 /* CMDateFormatterFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDateFormatterFactory.m; sourceTree = "<group>"; };
+		4C8E984814C24C2B00E62CE0 /* Enums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enums.h; sourceTree = "<group>"; };
+		4C8E984914C24E3200E62CE0 /* CMArgumentParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMArgumentParser.h; sourceTree = "<group>"; };
+		4C8E984A14C24E3200E62CE0 /* CMArgumentParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMArgumentParser.m; sourceTree = "<group>"; };
+		4C8E984D14C2528900E62CE0 /* CMEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMEvent.h; sourceTree = "<group>"; };
+		4C8E984E14C2528900E62CE0 /* CMEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMEvent.m; sourceTree = "<group>"; };
+		4C8E985014C25C5A00E62CE0 /* ITerminalOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITerminalOutput.h; sourceTree = "<group>"; };
+		4CD3FA6C14C26475000A4088 /* CMLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMLog.h; sourceTree = "<group>"; };
+		4CD3FA6D14C26475000A4088 /* CMLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMLog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C2E486014C23E5700E778BF /* CalendarStore.framework in Frameworks */,
 				4C2E484A14C23D2900E778BF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,6 +85,7 @@
 		4C2E484814C23D2900E778BF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4C2E485F14C23E5700E778BF /* CalendarStore.framework */,
 				4C2E484914C23D2900E778BF /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -73,6 +94,10 @@
 		4C2E484B14C23D2900E778BF /* tCal */ = {
 			isa = PBXGroup;
 			children = (
+				4C8E984C14C2527600E62CE0 /* Parameters */,
+				4C8E984714C24C0F00E62CE0 /* Enums */,
+				4C8E984314C24ABE00E62CE0 /* Factory */,
+				4C2E486214C23EF500E778BF /* Wrappers */,
 				4C2E484C14C23D2900E778BF /* main.m */,
 				4C2E485014C23D2900E778BF /* tCal.1 */,
 				4C2E484E14C23D2900E778BF /* Supporting Files */,
@@ -86,6 +111,46 @@
 				4C2E484F14C23D2900E778BF /* tCal-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C2E486214C23EF500E778BF /* Wrappers */ = {
+			isa = PBXGroup;
+			children = (
+				4CD3FA6C14C26475000A4088 /* CMLog.h */,
+				4CD3FA6D14C26475000A4088 /* CMLog.m */,
+				4C2E486314C23F1700E778BF /* CMCalendar.h */,
+				4C2E486414C23F1700E778BF /* CMCalendar.m */,
+				4C8E984914C24E3200E62CE0 /* CMArgumentParser.h */,
+				4C8E984A14C24E3200E62CE0 /* CMArgumentParser.m */,
+			);
+			name = Wrappers;
+			sourceTree = "<group>";
+		};
+		4C8E984314C24ABE00E62CE0 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				4C8E984414C24AD800E62CE0 /* CMDateFormatterFactory.h */,
+				4C8E984514C24AD800E62CE0 /* CMDateFormatterFactory.m */,
+			);
+			name = Factory;
+			sourceTree = "<group>";
+		};
+		4C8E984714C24C0F00E62CE0 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				4C8E984814C24C2B00E62CE0 /* Enums.h */,
+			);
+			name = Enums;
+			sourceTree = "<group>";
+		};
+		4C8E984C14C2527600E62CE0 /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				4C8E984D14C2528900E62CE0 /* CMEvent.h */,
+				4C8E984E14C2528900E62CE0 /* CMEvent.m */,
+				4C8E985014C25C5A00E62CE0 /* ITerminalOutput.h */,
+			);
+			name = Parameters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +204,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C2E484D14C23D2900E778BF /* main.m in Sources */,
+				4C2E486514C23F1700E778BF /* CMCalendar.m in Sources */,
+				4C8E984614C24AD800E62CE0 /* CMDateFormatterFactory.m in Sources */,
+				4C8E984B14C24E3200E62CE0 /* CMArgumentParser.m in Sources */,
+				4C8E984F14C2528900E62CE0 /* CMEvent.m in Sources */,
+				4CD3FA6E14C26475000A4088 /* CMLog.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +299,7 @@
 				4C2E485614C23D2900E778BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
